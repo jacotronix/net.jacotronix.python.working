@@ -9,6 +9,7 @@ Created on 28 Nov 2012
 #    Comment it
 #    Add DAC functionality
 #    Add functionality for reading all four channels at once.
+#    Publish
 
 from smbus import SMBus
 
