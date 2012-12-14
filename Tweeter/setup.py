@@ -5,7 +5,7 @@ Created on 8 Dec 2012
 '''
 from distutils.core import setup
 setup(name='tweeter',
-      version='0.0.1',
+      version='0.0.2',
       description='Twitter Wrapper',
       author='Jamie Jackson',
       author_email='jamie@jacobean.net',
