@@ -15,12 +15,15 @@ import twitter
 import ConfigParser
 import logging
 
+# Exception Class for empty tweets
 class TweeterMsgEmptyError(Exception):
     message = 'Tweeter Error: Message is Empty'
 
+# Exception Class for non-string tweets
 class TweeterMsgTypeError(Exception):
     message = 'Tweeter Error: Message Type Error'
 
+# Exception Class for tweets that are over 140 chars
 class TweeterMsgTooLong(Exception):
     message = 'Tweeter Error: Message Too Long'
 
@@ -29,18 +32,25 @@ class tweeter:
     
     __client = None
     
+    # Constructor
     def __init__(self, __configFile = "tweeter.cfg"):
         
+        # Create configuration file parser
         __config = ConfigParser.RawConfigParser()
+        
+        # create logging format
         logging.basicConfig(filename='tweeter.log',level=logging.DEBUG,
                             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                             datefmt='%m/%d/%Y %I:%M:%S %p')
         
+        # Attempt to open the configuration file
         try:
             __config.readfp(open(__configFile))
         except IOError as e:
             logging.debug("I/O Error ({0}): ({1})".format(e.errno, e.strerror))
             raise
+        
+        # Attempt to read the required credentials from the file
         try:
             __consumerKey = __config.get('DEFAULT', 'consumer_key')
             __consumerSecret = __config.get('DEFAULT', 'consumer_secret')
@@ -52,12 +62,17 @@ class tweeter:
         except ConfigParser.NoOptionError as e:
             logging.debug("ConfigParser Error ({0})".format(e))
             raise
+        
+        # Create the authenticated twitter client object
         self.__client = twitter.Api(consumer_key=__consumerKey,
                                     consumer_secret=__consumerSecret,
                                     access_token_key=__accessTokenKey,
                                     access_token_secret=__accessTokenSecret)
-        
+    
+    # Method to post update or tweet    
     def tweet(self, msg = None):
+        
+        # Check the message is correct
         if msg == None:
             logging.debug("Twitter Error Message is Empty")
             raise TweeterMsgEmptyError
@@ -67,6 +82,8 @@ class tweeter:
         if len(msg) > 140:
             logging.debug("Twitter Error Message Exceeds 140 Chars")
             raise TweeterMsgTooLong
+        
+        # Attempt to tweet
         try:
             update = self.__client.PostUpdate(msg)
             return update.text
@@ -77,6 +94,7 @@ class tweeter:
             logging.debug("Twitter Error ({0})".format(e))
             raise
 
+#Test Harnesses
 if __name__ == "__main__":
 
     longMesg = "01234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789"
