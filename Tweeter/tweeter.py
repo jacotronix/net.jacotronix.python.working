@@ -93,6 +93,9 @@ class tweeter:
         except twitter.TwitterError as e:
             logging.debug("Twitter Error ({0})".format(e))
             raise
+        except Exception as e:
+            logging.debug("Misc Error ({0})".format(e))
+            raise
 
 #Test Harnesses
 if __name__ == "__main__":

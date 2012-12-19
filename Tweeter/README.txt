@@ -5,6 +5,7 @@ Author - Jamie Jackson - http://blog.jacobean.net
 History
 -------
 
+0.0.4	19 Dec 12	Handling general exception around PostUpdate()
 0.0.3	15 Dec 12	Added instructions and comments.
 0.0.2	14 Dec 12	Added exception handling.
 0.0.1	09 Dec 12	Initial Release.
