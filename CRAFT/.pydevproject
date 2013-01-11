@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse-pydev version="1.0"?>
+
+<pydev_project>
+<pydev_pathproperty name="org.python.pydev.PROJECT_SOURCE_PATH">
+<path>/CRAFT</path>
+<path>/CRAFT/Threading</path>
+<path>/CRAFT/I2C-Inputs</path>
+<path>/CRAFT/I2C-LEDS</path>
+<path>/CRAFT/GPIO-Inputs</path>
+<path>/CRAFT/GPIO-LCD</path>
+<path>/CRAFT/GPIO-Outputs</path>
+<path>/CRAFT/GPIO-Transistors</path>
+<path>/CRAFT/SabLCDd</path>
+<path>/CRAFT/SQLite</path>
+<path>/CRAFT/tk</path>
+<path>/CRAFT/NetworkArd</path>
+</pydev_pathproperty>
+<pydev_property name="org.python.pydev.PYTHON_PROJECT_VERSION">python 2.7</pydev_property>
+<pydev_property name="org.python.pydev.PYTHON_PROJECT_INTERPRETER">python27</pydev_property>
+</pydev_project>
