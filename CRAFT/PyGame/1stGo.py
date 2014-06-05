@@ -18,7 +18,9 @@ class pyscope :
         disp_no = os.getenv("DISPLAY")
         if disp_no:
             print "I'm running under X display = {0}".format(disp_no)
-        
+            
+        os.putenv('SDL_FBDEV', '/dev/fb1')
+  
         # Check which frame buffer drivers are available
         # Start with fbcon since directfb hangs with composite output
         drivers = ['fbcon', 'directfb', 'svgalib']
