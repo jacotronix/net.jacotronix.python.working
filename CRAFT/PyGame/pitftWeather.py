@@ -1,0 +1,83 @@
+'''
+Created on 7 Jun 2014
+
+@author: Jamie
+'''
+import os
+import pygame
+import time
+import random
+import pywapi
+import string
+
+
+class pyscope :
+    screen = None;
+    
+    def __init__(self):
+        "Ininitializes a new pygame screen using the framebuffer"
+        # Based on "Python GUI in Linux frame buffer"
+        # http://www.karoltomala.com/blog/?p=679
+        disp_no = os.getenv("DISPLAY")
+        if disp_no:
+            print "I'm running under X display = {0}".format(disp_no)
+
+        os.putenv('SDL_FBDEV', '/dev/fb1')
+        
+        # Check which frame buffer drivers are available
+        # Start with fbcon since directfb hangs with composite output
+        drivers = ['fbcon', 'directfb', 'svgalib']
+        found = False
+        for driver in drivers:
+            # Make sure that SDL_VIDEODRIVER is set
+            if not os.getenv('SDL_VIDEODRIVER'):
+                os.putenv('SDL_VIDEODRIVER', driver)
+            try:
+                pygame.display.init()
+            except pygame.error:
+                print 'Driver: {0} failed.'.format(driver)
+                continue
+            found = True
+            break
+    
+        if not found:
+            raise Exception('No suitable video driver found!')
+        
+        size = (pygame.display.Info().current_w, pygame.display.Info().current_h)
+        print "Framebuffer size: %d x %d" % (size[0], size[1])
+        self.screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
+        # Clear the screen to start
+        self.screen.fill((0, 0, 0))        
+        # Initialise font support
+        pygame.font.init()
+        # Render the screen
+        pygame.display.update()
+
+    def __del__(self):
+        "Destructor to make sure pygame shuts down, etc."
+
+    def test(self):
+        # Fill the screen with red (255, 0, 0)
+        red = (255, 0, 0)
+        self.screen.fill(red)
+        # Update the display
+        pygame.display.update()
+
+weather_com_result = pywapi.get_weather_from_weather_com('UKXX1087')
+current_temp = weather_com_result['current_conditions']['temperature'] + " deg C"
+# Create an instance of the PyScope class
+scope = pyscope()
+# Get a refernce to the system font, size 30
+font = pygame.font.Font(None, 30)
+# Render some white text (pyScope 0.1) onto text_surface
+#text_surface = font.render('pyScope (%s)' % "0.1", True, (255, 255, 255))  # White text
+text_surface = font.render(current_temp, True, (255, 255, 255))  # White text
+# Blit the text at 10, 0
+scope.screen.blit(text_surface, (20, 50))
+# Render the weather logo at 10,360
+logo = pygame.image.load('28.png').convert()
+scope.screen.blit(logo, (50, 100))
+pygame.display.update()
+
+# Wait 10 seconds
+time.sleep(10)
