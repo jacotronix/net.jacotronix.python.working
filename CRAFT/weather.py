@@ -7,6 +7,7 @@ import pywapi
 import pprint
 import string
 import sys
+import datetime
 
 weather_com_result = pywapi.get_weather_from_weather_com('UKXX1087')
 kphToMph = 1.60934400061
@@ -19,7 +20,14 @@ winSpd = {}
 winDir = {}
 
 #print string.lower(weather_com_result['current_conditions']['text']) + ""
-for i in range(0, 5):
+
+start = 0
+try:
+    test = int(weather_com_result['forecasts'][0]['day']['wind']['speed'])
+except ValueError:
+    start = 1
+
+for i in range(start, 5):
     
     dayOfWeek[i] = weather_com_result['forecasts'][i]['day_of_week']
     high[i] = weather_com_result['forecasts'][i]['high']
