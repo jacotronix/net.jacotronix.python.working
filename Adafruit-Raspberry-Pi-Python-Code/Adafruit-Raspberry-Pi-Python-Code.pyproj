@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94cf08ad-5e8f-49b1-8704-91f85ed96c1f}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adafruit_ADS1x15\Adafruit_ADS1x15.py" />
+    <Compile Include="Adafruit_ADS1x15\Adafruit_I2C.py" />
+    <Compile Include="Adafruit_ADS1x15\ads1015_example.py" />
+    <Compile Include="Adafruit_BMP085\Adafruit_BMP085.py" />
+    <Compile Include="Adafruit_BMP085\Adafruit_BMP085_example.py" />
+    <Compile Include="Adafruit_BMP085\Adafruit_BMP085_googledocs_ex.py" />
+    <Compile Include="Adafruit_BMP085\Adafruit_I2C.py" />
+    <Compile Include="Adafruit_CharLCDPlate\Adafruit_CharLCDPlate.py" />
+    <Compile Include="Adafruit_CharLCDPlate\Adafruit_I2C.py" />
+    <Compile Include="Adafruit_CharLCDPlate\Adafruit_MCP230xx.py" />
+    <Compile Include="Adafruit_CharLCD\Adafruit_CharLCD.py" />
+    <Compile Include="Adafruit_CharLCD\Adafruit_CharLCD_IPclock_example.py" />
+    <Compile Include="Adafruit_CharLCD\Adafruit_I2C.py" />
+    <Compile Include="Adafruit_DHT_Driver\Adafruit_DHT_googledocs.ex.py" />
+    <Compile Include="Adafruit_I2C\Adafruit_I2C.py" />
+    <Compile Include="Adafruit_LEDBackpack\Adafruit_7Segment.py" />
+    <Compile Include="Adafruit_LEDBackpack\Adafruit_8x8.py" />
+    <Compile Include="Adafruit_LEDBackpack\Adafruit_I2C.py" />
+    <Compile Include="Adafruit_LEDBackpack\Adafruit_LEDBackpack.py" />
+    <Compile Include="Adafruit_LEDBackpack\ex_7segment_clock.py" />
+    <Compile Include="Adafruit_LEDBackpack\ex_8x8_pixels.py" />
+    <Compile Include="Adafruit_LEDpixels\Adafruit_LEDpixels.py" />
+    <Compile Include="Adafruit_MCP230xx\Adafruit_I2C.py" />
+    <Compile Include="Adafruit_MCP230xx\Adafruit_MCP230xx.py" />
+    <Compile Include="Adafruit_MCP3008\mcp3008.py" />
+    <Compile Include="Adafruit_MCP4725\Adafruit_I2C.py" />
+    <Compile Include="Adafruit_MCP4725\Adafruit_MCP4725.py" />
+    <Compile Include="Adafruit_MCP4725\sinewave.py" />
+    <Compile Include="Adafruit_PWM_Servo_Driver\Adafruit_I2C.py" />
+    <Compile Include="Adafruit_PWM_Servo_Driver\Adafruit_PWM_Servo_Driver.py" />
+    <Compile Include="Adafruit_PWM_Servo_Driver\Servo_Example.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Adafruit_ADS1x15" />
+    <Folder Include="Adafruit_BMP085" />
+    <Folder Include="Adafruit_CharLCD" />
+    <Folder Include="Adafruit_CharLCDPlate" />
+    <Folder Include="Adafruit_DHT_Driver" />
+    <Folder Include="Adafruit_I2C" />
+    <Folder Include="Adafruit_LEDBackpack" />
+    <Folder Include="Adafruit_LEDpixels" />
+    <Folder Include="Adafruit_MCP230xx" />
+    <Folder Include="Adafruit_MCP3008" />
+    <Folder Include="Adafruit_MCP4725" />
+    <Folder Include="Adafruit_PWM_Servo_Driver" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
