@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69bb9602-e753-4d46-b262-10e3c17e4a06}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>1stXML.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="exercice.png" />
+    <Content Include="PyGame\raspberry_pi_adafruit_logo.gif" />
+    <Content Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1stXML.py" />
+    <Compile Include="BMP085.py" />
+    <Compile Include="Daemon-Example.py" />
+    <Compile Include="Daemon.py" />
+    <Compile Include="DateTime.py" />
+    <Compile Include="firstGraph.py" />
+    <Compile Include="GPIO-Inputs\JustAButton.py" />
+    <Compile Include="GPIO-Inputs\Pelican.py" />
+    <Compile Include="GPIO-LCD\1stGO.py" />
+    <Compile Include="GPIO-LCD\2ndGoUseLCDLib.py" />
+    <Compile Include="GPIO-LCD\Daemon.py" />
+    <Compile Include="GPIO-LCD\LCDClock.py" />
+    <Compile Include="GPIO-LCD\LCDClockSysLog.py" />
+    <Compile Include="GPIO-LCD\LCDLib.py" />
+    <Compile Include="GPIO-Outputs\Binary.py" />
+    <Compile Include="GPIO-Outputs\Buzzer.py" />
+    <Compile Include="GPIO-Outputs\BuzzFlash.py" />
+    <Compile Include="GPIO-Outputs\Flash.py" />
+    <Compile Include="GPIO-Outputs\Patterns.py" />
+    <Compile Include="GPIO-Outputs\PelicanV2.py" />
+    <Compile Include="GPIO-Outputs\TrafficLights.py" />
+    <Compile Include="GPIO-Transistors\FirstTranny.py" />
+    <Compile Include="GPIO-Transistors\TrafficLights.py" />
+    <Compile Include="I2C-Inputs\1stADC.py" />
+    <Compile Include="I2C-Inputs\JustAButton.py" />
+    <Compile Include="I2C-Inputs\PCF8591P.py" />
+    <Compile Include="I2C-LEDS\I2CFlash.py" />
+    <Compile Include="I2C-LEDS\PelicanV3.py" />
+    <Compile Include="I2C-LEDS\TrafficLights.py" />
+    <Compile Include="iniRead.py" />
+    <Compile Include="iniWrite.py" />
+    <Compile Include="NetworkArd\udpRx.py" />
+    <Compile Include="PyGame\1stGo.py" />
+    <Compile Include="PyGame\fonts.py" />
+    <Compile Include="PyGame\pitftWeather.py" />
+    <Compile Include="PyGame\pyscope.py" />
+    <Compile Include="SabLCDd\1stLcdClient.py" />
+    <Compile Include="SabLCDd\SabLCDd.py" />
+    <Compile Include="serialRead.py" />
+    <Compile Include="sigTerm.py" />
+    <Compile Include="SQLite\readlog.py" />
+    <Compile Include="SQLite\writelog.py" />
+    <Compile Include="Threading\BuzzFlash.py" />
+    <Compile Include="Threading\Joining.py" />
+    <Compile Include="timeDeltas.py" />
+    <Compile Include="tk\embedding_in_tk.py" />
+    <Compile Include="tk\tkAccel.py" />
+    <Compile Include="tk\tkHelloWorld.py" />
+    <Compile Include="tk\tkScale.py" />
+    <Compile Include="twitterDecode.py" />
+    <Compile Include="twitterWrite.py" />
+    <Compile Include="weather.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GPIO-Inputs" />
+    <Folder Include="GPIO-LCD" />
+    <Folder Include="GPIO-Outputs" />
+    <Folder Include="GPIO-Transistors" />
+    <Folder Include="I2C-Inputs" />
+    <Folder Include="I2C-LEDS" />
+    <Folder Include="NetworkArd" />
+    <Folder Include="PyGame" />
+    <Folder Include="SabLCDd" />
+    <Folder Include="SQLite" />
+    <Folder Include="Threading" />
+    <Folder Include="tk" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
