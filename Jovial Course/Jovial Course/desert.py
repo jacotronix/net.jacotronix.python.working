@@ -46,7 +46,10 @@ def calcHeading(x, y):
 def calcTime(distance, speed):
     return distance / (speed / 60)
 
-for record in range(0, 9):
+for record in range(0, 10):
+    if ((testdata[record][0] == 0) and (testdata[record][1] == 0)):
+        print (testdata[record])
+        continue
     testdata[record][2] = calcRange(testdata[record][0], testdata[record][1])
     testdata[record][3] = calcHeading(testdata[record][0], testdata[record][1])
     testdata[record][4] = calcTime(testdata[record][2], walkingSpeed)
