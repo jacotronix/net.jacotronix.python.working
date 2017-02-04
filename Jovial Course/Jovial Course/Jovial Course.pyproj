@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7334d8f1-b899-4b1b-9a82-f351e8d0a1cf</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>quadratic.py</StartupFile>
+    <StartupFile>desert.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,9 @@
   <ItemGroup>
     <Compile Include="Jovial_Course.py" />
     <Compile Include="quadratic.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="desert.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
