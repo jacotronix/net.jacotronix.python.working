@@ -17,16 +17,17 @@ def calcRange(x, y):
     return math.sqrt((x*x)+(y*y))
 
 def calcHeading(x, y):
+
     if (x == 0):
         if (y > 0):
             return 0.0
-        else:
+        elif(y < 0):
             return 180.0
 
     if (y == 0):
         if (x > 0):
             return 90.0
-        else:
+        elif (x < 0):
             return 270.0
 
     theta = abs(math.degrees(math.atan(y/x)))
@@ -34,14 +35,21 @@ def calcHeading(x, y):
     if (x > 0):
         if (y > 0):
             return 90.0 - theta
-        else:
+        elif (y < 0):
             return 90.0 + theta
     elif (x < 0):
         if (y > 0):
             return 360.0 - theta
-        else:
+        elif (y < 0):
             return 270.0 - theta
         
+    # Sooo much easier using atan2 which Jovial doesn't have :(
+
+    #rads = math.atan2(y,x)
+    #if (rads < 0):
+    #    rads+=(2*math.pi)
+    #return math.degrees(rads)
+
 
 def calcTime(distance, speed):
     return distance / (speed / 60)

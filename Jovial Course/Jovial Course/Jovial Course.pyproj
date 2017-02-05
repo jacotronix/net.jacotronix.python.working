@@ -30,6 +30,9 @@
     <Compile Include="desert.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="shapes.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
