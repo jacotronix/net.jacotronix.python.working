@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cd6a54f5-96e2-4de6-b52c-976c54e45066</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Century.py</StartupFile>
+    <StartupFile>adjacentElementsProduct.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="adjacentElementsProduct.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Century.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckPalindrome.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CodeFights.py" />
