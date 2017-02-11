@@ -3,16 +3,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>7334d8f1-b899-4b1b-9a82-f351e8d0a1cf</ProjectGuid>
+    <ProjectGuid>99819c38-7bad-4662-900f-b60b0ceadcef</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>shapes.py</StartupFile>
+    <StartupFile>Day01DataTypes.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Jovial Course</Name>
-    <RootNamespace>Jovial Course</RootNamespace>
-    <IsWindowsApplication>True</IsWindowsApplication>
+    <Name>HackerRank30Days</Name>
+    <RootNamespace>HackerRank30Days</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,16 +22,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Jovial_Course.py" />
-    <Compile Include="quadratic.py">
+    <Compile Include="Day01DataTypes.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="desert.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="shapes.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="HackerRank30Days.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

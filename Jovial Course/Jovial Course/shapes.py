@@ -2,6 +2,12 @@ import math
 
 pi = math.pi
 
+testdata = [["SPH", 0, 0, 0, 0, 0],
+            ["CUB", 0, 0, 0, 0, 0],
+            ["REC", 0, 0, 0, 0, 0],
+            ["CYL", 0, 0, 0, 0, 0],
+            ["PYR", 0, 0, 0, 0, 0],
+            ["CON", 0, 0, 0, 0, 0]]
 
 
 # sphere - v = 4/3 * pi * r*r
@@ -28,3 +34,17 @@ def calcVPyramid(h, l, w):
 # cone - v = 1/3 * pi * r*r * h
 def calcVCone(r, h):
     return ((1/3) * pi * (r*r) * h)
+
+for record in range(0, 10):
+    if testdata[record][0] == "SPH":
+        print testdata[record]
+    elif testdata[record][0] == "CUB":
+        print testdata[record]
+    elif testdata[record][0] == "REC":
+        print testdata[record]
+    elif testdata[record][0] == "CYL":
+        print testdata[record]
+    elif testdata[record][0] == "PYR":
+        print testdata[record]
+    elif testdata[record][0] == "CON":
+        print testdata[record]
