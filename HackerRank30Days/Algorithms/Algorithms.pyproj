@@ -3,15 +3,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>99819c38-7bad-4662-900f-b60b0ceadcef</ProjectGuid>
+    <ProjectGuid>9f4222b7-6edb-4129-8ab7-045595fe7409</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Day01DataTypes.py</StartupFile>
+    <StartupFile>Algorithms.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>HackerRank30Days</Name>
-    <RootNamespace>HackerRank30Days</RootNamespace>
+    <Name>Algorithms</Name>
+    <RootNamespace>Algorithms</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,10 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Day01DataTypes.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="HackerRank30Days.py" />
+    <Compile Include="Algorithms.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -23,7 +23,6 @@
 #The largest product of adjacent elements.
 
 def adjacentElementsProduct(inputArray):
-    #product = 0;
     num = 0;
     length = len(inputArray) - 1;
     while (num < length):
