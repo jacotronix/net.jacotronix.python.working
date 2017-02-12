@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>9f4222b7-6edb-4129-8ab7-045595fe7409</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>diagonalDifference.py</StartupFile>
+    <StartupFile>plusMinus.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,6 +24,9 @@
   <ItemGroup>
     <Compile Include="Algorithms.py" />
     <Compile Include="diagonalDifference.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="plusMinus.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
