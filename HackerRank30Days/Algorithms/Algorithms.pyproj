@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>9f4222b7-6edb-4129-8ab7-045595fe7409</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Algorithms.py</StartupFile>
+    <StartupFile>diagonalDifference.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Algorithms.py" />
+    <Compile Include="diagonalDifference.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
