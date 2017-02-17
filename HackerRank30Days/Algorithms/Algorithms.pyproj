@@ -23,10 +23,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Algorithms.py" />
+    <Compile Include="arrayRotation.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="diagonalDifference.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="plusMinus.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="staircase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="timeConversion.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

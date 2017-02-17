@@ -6,7 +6,7 @@
     <ProjectGuid>99819c38-7bad-4662-900f-b60b0ceadcef</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Day02Operators.py</StartupFile>
+    <StartupFile>Day06StringOddEvens.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,6 +27,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Day02Operators.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day04classVsInstance.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day05Loops.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Day06StringOddEvens.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="HackerRank30Days.py" />
