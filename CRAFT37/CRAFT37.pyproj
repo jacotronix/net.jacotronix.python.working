@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>262d341d-057f-4c8e-ae2e-65e88f9b32bc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>HelloWorld.py</StartupFile>
+    <StartupFile>sqlite\05-sqlite-select.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,6 +24,30 @@
     <Compile Include="HelloWorld.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="sqlite\01-sqlite-db.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sqlite\02-sqlite-tables.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sqlite\03-sqlite-insert.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sqlite\04-sqlite-update.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sqlite\05-sqlite-select.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sqlite\06-sqlite-delete.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sqlite\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sqlite\README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
