@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>262d341d-057f-4c8e-ae2e-65e88f9b32bc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>MSSqlSvr\03-mssql-insert.py</StartupFile>
+    <StartupFile>MySQL\06-mysql-select.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -43,6 +43,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="MySQL\04-mysql-insert.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\05-mysql-update.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\06-mysql-select.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="sqlite\01-sqlite-db.py">
