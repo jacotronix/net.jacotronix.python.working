@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>262d341d-057f-4c8e-ae2e-65e88f9b32bc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>sqlite\05-sqlite-select.py</StartupFile>
+    <StartupFile>MSSqlSvr\03-mssql-insert.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,27 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="HelloWorld.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSqlSvr\01-mssql-connectionTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSqlSvr\02-mssql-tables.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSqlSvr\03-mssql-insert.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\01-mysql-connectionTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\02-mysql-db.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\03-mysql-tables.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\04-mysql-insert.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="sqlite\01-sqlite-db.py">
@@ -44,6 +65,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="MySQL\" />
+    <Folder Include="MSSqlSvr\" />
     <Folder Include="sqlite\" />
   </ItemGroup>
   <ItemGroup>
