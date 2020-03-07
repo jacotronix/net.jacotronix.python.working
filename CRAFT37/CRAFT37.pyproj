@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>262d341d-057f-4c8e-ae2e-65e88f9b32bc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>MySQL\06-mysql-select.py</StartupFile>
+    <StartupFile>MSSqlSvr\05-mssql-select.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -31,6 +31,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="MSSqlSvr\03-mssql-insert.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSqlSvr\04-mssql-update.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSqlSvr\05-mssql-select.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="MySQL\01-mysql-connectionTest.py">
