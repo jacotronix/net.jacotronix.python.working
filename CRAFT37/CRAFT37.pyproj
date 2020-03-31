@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>262d341d-057f-4c8e-ae2e-65e88f9b32bc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>MSSqlSvr\05-mssql-select.py</StartupFile>
+    <StartupFile>DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\4-34-ZipEnumerate.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,42 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DefenceIdeas\Module4-Python\hangman.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\1-22-StringMethods.py" />
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\2-03-ListsMembershipOperators.py" />
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\2-10-Tuples.py" />
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\2-14-Dictionary.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\2-20-CompoundDataStructures.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\2-22-PracticeQuestions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\4-03-ConditionalStatements.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\4-08-BooleanConditionals.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\4-11-for.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\4-18-IteratingDictionaries.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\4-29-BreakContinue.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\4-24-WhileLoops.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\4-34-ZipEnumerate.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="HelloWorld.py">
       <SubType>Code</SubType>
     </Compile>
@@ -75,10 +111,16 @@
     <Compile Include="sqlite\06-sqlite-delete.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\1-06-VariablesAssignments.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DefenceIdeas\Module4-Python\" />
     <Folder Include="MySQL\" />
     <Folder Include="MSSqlSvr\" />
+    <Folder Include="DefenceIdeas\" />
+    <Folder Include="DefenceIdeas\Module4-Python\UDACity_ud1110_IntroToPython\" />
     <Folder Include="sqlite\" />
   </ItemGroup>
   <ItemGroup>
